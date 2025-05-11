@@ -1,0 +1,53 @@
+﻿column_name;column_type;column_full_name;column_description;column example
+date_key;int;date as integer;unique date identifier in integer format;yyyymmdd
+full_date;date;date;full date with year, month, and day;yyyy-mm-dd
+y;int;year;year number;2025
+m;int;month;month number;1
+d;int;day;calendar day number;27
+day_suffix;char(2);day suffix;suffix indicating the day of the month (e.g. 1st, 2nd, 3rd);st, nd, rd, th
+year_month;char(7);year with month;year and month in yyyy-mm format;2025-01
+wkd;int;weekday;number representing the weekday (e.g. 1 = Monday);1
+wkd_name;nvarchar(30);weekday name;name of the weekday (e.g. Monday, Tuesday);Monday
+m_name;nvarchar(30);month name;name of the month (e.g. January, February);January
+q;int;quarter;quarter of the year (e.g. 1 = Q1);1
+year_quarter;nvarchar(8);year with quarter;year and quarter in yyyy-Q format;2025-Q1
+day_year;int;day of year;ordinal number of the day in the year;27
+w;int;week number;week number in the year;4
+iso_w;int;iso week number;ISO 8601 compliant week number;4
+week_month;int;week of the month;week number within the month;1
+is_holiday;int;is date a holiday?;indicates if the date is a holiday (1 = yes, 0 = no);1
+holiday_name;nvarchar(255);holiday name;name of the holiday if the date is a holiday;Christmas Eve
+is_weekend;int;is date a weekend;indicates if the date is a weekend (1 = yes, 0 = no);1
+is_weekday;int;is date a weekday;indicates if the date is a weekday (1 = yes, 0 = no);0
+previous_weekday;date;previous weekday;date of the previous weekday;26.01.2025
+next_weekday;date;next weekday;date of the next weekday;29.01.2025
+is_workday;int;is workday;indicates if the date is a workday (1 = yes, 0 = no);1
+workday_number;int;workday number;ordinal number of the workday in the year;18
+workday_date;date;workday date;date of the specific workday;15.01.2025
+workday_id;int;workday ID;unique ID for the workday;12345
+pwd;date;previous workday;date of the previous workday;26.01.2025
+nwd;date;next workday;date of the next workday;29.01.2025
+first_workday_in_month;date;first workday in month;date of the first workday in the month;02.01.2025
+first_day_year;date;first day of year;date of the first day in the year;01.01.2025
+first_day_quarter;date;first day of quarter;date of the first day in the quarter;01.01.2025
+first_day_month;date;first day of month;date of the first day in the month;01.01.2025
+first_day_week;date;first day of week;date of the first day in the week;27.01.2025
+last_day_year;date;last day of year;date of the last day in the year;31.12.2025
+last_day_quarter;date;last day of quarter;date of the last day in the quarter;31.03.2025
+last_day_month;date;last day of month;date of the last day in the month;31.01.2025
+last_day_week;date;last day of week;date of the last day in the week;02.02.2025
+previous_day;date;previous day;date of the previous calendar day;26.01.2025
+next_day;date;next day;date of the next calendar day;28.01.2025
+previous_year_month;char(7);previous year with month;year and month of the previous month;2024-12
+next_year_month;char(7);next year with month;year and month of the next month;2025-02
+previous_quarter;int;previous quarter;quarter number of the previous quarter;4
+next_quarter;int;next quarter;quarter number of the next quarter;2
+previous_year;int;previous year;previous calendar year;2024
+next_year;int;next year;next calendar year;2026
+is_today;int;is today;indicates if the date is today (1 = yes, 0 = no);1
+is_report_day;int;is report day;indicates if the date is a report day (1 = yes, 0 = no);0
+is_current_week;int;is current week;indicates if the date is in the current week (1 = yes, 0 = no);1
+is_current_month;int;is current month;indicates if the date is in the current month (1 = yes, 0 = no);1
+is_current_quarter;int;is current quarter;indicates if the date is in the current quarter (1 = yes, 0 = no);1
+is_current_year;int;is current year;indicates if the date is in the current year (1 = yes, 0 = no);1
+created;datetime;created;timestamp when the calendar table was created;27.01.2025 12:00
